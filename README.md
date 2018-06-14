@@ -1,5 +1,7 @@
 # domainqlstarter 
 
+![DB + JOOQ + DomainQL = GraphQL](./misc/visual.png)
+
 Skeleton project for domainql based projects.
 
 
