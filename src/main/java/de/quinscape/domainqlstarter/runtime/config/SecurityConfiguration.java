@@ -26,6 +26,7 @@ public class SecurityConfiguration
             "/index.jsp",
             "/error",
             "/js/**",
+            "/graphql",
             "/css/**",
             "/webfonts/**",
             "/"
@@ -79,7 +80,7 @@ public class SecurityConfiguration
 
         web.ignoring()
             .antMatchers(PUBLIC_URIS)
-            .and().debug(true)
+            //.and().debug(true)
             ;
     }
 
