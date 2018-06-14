@@ -20,7 +20,8 @@ The starter project includes the following libraries / technologies:
  * Webpack 4 
  * Babel 
  * mini-css-extract for CSS module imports
- * shelljs as scripting helper
+ * [shelljs](https://github.com/shelljs/shelljs) as scripting helper. So far minimally used, 
+   but also general recommendation for cross-system build-scripting in nodejs projects.
  * Mocha tests with power-asserts (integrated into maven build)
  
 ### Client
@@ -39,8 +40,8 @@ The starter project includes the following libraries / technologies:
  
 ## Usage
 
- * Clone this repository and make sure to change the git remote to your new project repository
- * Customize everything to your liking
+ * **Clone this repository** and make sure to change the git remote to your new project repository
+ * **Customize/Rename** everything to your liking
    * Everything named "domainqlstarter" has to be renamed / changed. 
    * I have marked a lot of places in src/ and pom.xml with "TODO:" 
 
