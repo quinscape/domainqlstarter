@@ -30,14 +30,12 @@ import javax.validation.constraints.Size;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 @Entity
 @Table(name = "app_login", schema = "public", indexes = {
-    @Index(name = "pk_app_login", unique = true, columnList = "id ASC"),
-    @Index(name = "uc_app_login_series", unique = true, columnList = "series ASC")
+    @Index(name = "pk_app_login", unique = true, columnList = "series ASC")
 })
 public class AppLogin implements Serializable {
 
-    private static final long serialVersionUID = -1800779057;
+    private static final long serialVersionUID = 595698227;
 
-    private String    id;
     private String    username;
     private String    series;
     private String    token;
@@ -46,7 +44,6 @@ public class AppLogin implements Serializable {
     public AppLogin() {}
 
     public AppLogin(AppLogin value) {
-        this.id = value.id;
         this.username = value.username;
         this.series = value.series;
         this.token = value.token;
@@ -54,29 +51,15 @@ public class AppLogin implements Serializable {
     }
 
     public AppLogin(
-        String    id,
         String    username,
         String    series,
         String    token,
         Timestamp lastUsed
     ) {
-        this.id = id;
         this.username = username;
         this.series = series;
         this.token = token;
         this.lastUsed = lastUsed;
-    }
-
-    @Id
-    @Column(name = "id", unique = true, nullable = false, length = 36)
-    @NotNull
-    @Size(max = 36)
-    public String getId() {
-        return this.id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     @Column(name = "username", nullable = false, length = 64)
@@ -90,6 +73,7 @@ public class AppLogin implements Serializable {
         this.username = username;
     }
 
+    @Id
     @Column(name = "series", unique = true, nullable = false, length = 64)
     @NotNull
     @Size(max = 64)
@@ -126,8 +110,7 @@ public class AppLogin implements Serializable {
     public String toString() {
         StringBuilder sb = new StringBuilder("AppLogin (");
 
-        sb.append(id);
-        sb.append(", ").append(username);
+        sb.append(username);
         sb.append(", ").append(series);
         sb.append(", ").append(token);
         sb.append(", ").append(lastUsed);

@@ -39,7 +39,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AppLogin extends TableImpl<AppLoginRecord> {
 
-    private static final long serialVersionUID = -1808328793;
+    private static final long serialVersionUID = 1279449341;
 
     /**
      * The reference instance of <code>public.app_login</code>
@@ -53,11 +53,6 @@ public class AppLogin extends TableImpl<AppLoginRecord> {
     public Class<AppLoginRecord> getRecordType() {
         return AppLoginRecord.class;
     }
-
-    /**
-     * The column <code>public.app_login.id</code>.
-     */
-    public final TableField<AppLoginRecord, String> ID = createField("id", org.jooq.impl.SQLDataType.VARCHAR(36).nullable(false), this, "");
 
     /**
      * The column <code>public.app_login.username</code>.
@@ -121,7 +116,7 @@ public class AppLogin extends TableImpl<AppLoginRecord> {
      */
     @Override
     public List<Index> getIndexes() {
-        return Arrays.<Index>asList(Indexes.PK_APP_LOGIN, Indexes.UC_APP_LOGIN_SERIES);
+        return Arrays.<Index>asList(Indexes.PK_APP_LOGIN);
     }
 
     /**
@@ -137,7 +132,7 @@ public class AppLogin extends TableImpl<AppLoginRecord> {
      */
     @Override
     public List<UniqueKey<AppLoginRecord>> getKeys() {
-        return Arrays.<UniqueKey<AppLoginRecord>>asList(Keys.PK_APP_LOGIN, Keys.UC_APP_LOGIN_SERIES);
+        return Arrays.<UniqueKey<AppLoginRecord>>asList(Keys.PK_APP_LOGIN);
     }
 
     /**

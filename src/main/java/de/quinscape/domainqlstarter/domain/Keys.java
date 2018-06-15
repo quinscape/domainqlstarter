@@ -44,7 +44,6 @@ public class Keys {
     // -------------------------------------------------------------------------
 
     public static final UniqueKey<AppLoginRecord> PK_APP_LOGIN = UniqueKeys0.PK_APP_LOGIN;
-    public static final UniqueKey<AppLoginRecord> UC_APP_LOGIN_SERIES = UniqueKeys0.UC_APP_LOGIN_SERIES;
     public static final UniqueKey<AppUserRecord> PK_APP_USER = UniqueKeys0.PK_APP_USER;
     public static final UniqueKey<AppUserRecord> UC_APP_USER_LOGIN = UniqueKeys0.UC_APP_USER_LOGIN;
     public static final UniqueKey<FooRecord> PK_FOO = UniqueKeys0.PK_FOO;
@@ -62,8 +61,7 @@ public class Keys {
     // -------------------------------------------------------------------------
 
     private static class UniqueKeys0 {
-        public static final UniqueKey<AppLoginRecord> PK_APP_LOGIN = Internal.createUniqueKey(AppLogin.APP_LOGIN, "pk_app_login", AppLogin.APP_LOGIN.ID);
-        public static final UniqueKey<AppLoginRecord> UC_APP_LOGIN_SERIES = Internal.createUniqueKey(AppLogin.APP_LOGIN, "uc_app_login_series", AppLogin.APP_LOGIN.SERIES);
+        public static final UniqueKey<AppLoginRecord> PK_APP_LOGIN = Internal.createUniqueKey(AppLogin.APP_LOGIN, "pk_app_login", AppLogin.APP_LOGIN.SERIES);
         public static final UniqueKey<AppUserRecord> PK_APP_USER = Internal.createUniqueKey(AppUser.APP_USER, "pk_app_user", AppUser.APP_USER.ID);
         public static final UniqueKey<AppUserRecord> UC_APP_USER_LOGIN = Internal.createUniqueKey(AppUser.APP_USER, "uc_app_user_login", AppUser.APP_USER.LOGIN);
         public static final UniqueKey<FooRecord> PK_FOO = Internal.createUniqueKey(Foo.FOO, "pk_foo", Foo.FOO.ID);

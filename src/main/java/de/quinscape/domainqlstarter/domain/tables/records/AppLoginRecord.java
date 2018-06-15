@@ -19,8 +19,8 @@ import javax.validation.constraints.Size;
 
 import org.jooq.Field;
 import org.jooq.Record1;
-import org.jooq.Record5;
-import org.jooq.Row5;
+import org.jooq.Record4;
+import org.jooq.Row4;
 import org.jooq.impl.UpdatableRecordImpl;
 
 
@@ -37,36 +37,17 @@ import org.jooq.impl.UpdatableRecordImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 @Entity
 @Table(name = "app_login", schema = "public", indexes = {
-    @Index(name = "pk_app_login", unique = true, columnList = "id ASC"),
-    @Index(name = "uc_app_login_series", unique = true, columnList = "series ASC")
+    @Index(name = "pk_app_login", unique = true, columnList = "series ASC")
 })
-public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implements Record5<String, String, String, String, Timestamp> {
+public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implements Record4<String, String, String, Timestamp> {
 
-    private static final long serialVersionUID = 1484182453;
-
-    /**
-     * Setter for <code>public.app_login.id</code>.
-     */
-    public void setId(String value) {
-        set(0, value);
-    }
-
-    /**
-     * Getter for <code>public.app_login.id</code>.
-     */
-    @Id
-    @Column(name = "id", unique = true, nullable = false, length = 36)
-    @NotNull
-    @Size(max = 36)
-    public String getId() {
-        return (String) get(0);
-    }
+    private static final long serialVersionUID = 1850515238;
 
     /**
      * Setter for <code>public.app_login.username</code>.
      */
     public void setUsername(String value) {
-        set(1, value);
+        set(0, value);
     }
 
     /**
@@ -76,31 +57,32 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
     @NotNull
     @Size(max = 64)
     public String getUsername() {
-        return (String) get(1);
+        return (String) get(0);
     }
 
     /**
      * Setter for <code>public.app_login.series</code>.
      */
     public void setSeries(String value) {
-        set(2, value);
+        set(1, value);
     }
 
     /**
      * Getter for <code>public.app_login.series</code>.
      */
+    @Id
     @Column(name = "series", unique = true, nullable = false, length = 64)
     @NotNull
     @Size(max = 64)
     public String getSeries() {
-        return (String) get(2);
+        return (String) get(1);
     }
 
     /**
      * Setter for <code>public.app_login.token</code>.
      */
     public void setToken(String value) {
-        set(3, value);
+        set(2, value);
     }
 
     /**
@@ -110,14 +92,14 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
     @NotNull
     @Size(max = 64)
     public String getToken() {
-        return (String) get(3);
+        return (String) get(2);
     }
 
     /**
      * Setter for <code>public.app_login.last_used</code>.
      */
     public void setLastUsed(Timestamp value) {
-        set(4, value);
+        set(3, value);
     }
 
     /**
@@ -126,7 +108,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
     @Column(name = "last_used", nullable = false)
     @NotNull
     public Timestamp getLastUsed() {
-        return (Timestamp) get(4);
+        return (Timestamp) get(3);
     }
 
     // -------------------------------------------------------------------------
@@ -142,23 +124,23 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
     }
 
     // -------------------------------------------------------------------------
-    // Record5 type implementation
+    // Record4 type implementation
     // -------------------------------------------------------------------------
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public Row5<String, String, String, String, Timestamp> fieldsRow() {
-        return (Row5) super.fieldsRow();
+    public Row4<String, String, String, Timestamp> fieldsRow() {
+        return (Row4) super.fieldsRow();
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public Row5<String, String, String, String, Timestamp> valuesRow() {
-        return (Row5) super.valuesRow();
+    public Row4<String, String, String, Timestamp> valuesRow() {
+        return (Row4) super.valuesRow();
     }
 
     /**
@@ -166,14 +148,6 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      */
     @Override
     public Field<String> field1() {
-        return AppLogin.APP_LOGIN.ID;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public Field<String> field2() {
         return AppLogin.APP_LOGIN.USERNAME;
     }
 
@@ -181,7 +155,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public Field<String> field3() {
+    public Field<String> field2() {
         return AppLogin.APP_LOGIN.SERIES;
     }
 
@@ -189,7 +163,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public Field<String> field4() {
+    public Field<String> field3() {
         return AppLogin.APP_LOGIN.TOKEN;
     }
 
@@ -197,7 +171,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public Field<Timestamp> field5() {
+    public Field<Timestamp> field4() {
         return AppLogin.APP_LOGIN.LAST_USED;
     }
 
@@ -206,14 +180,6 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      */
     @Override
     public String component1() {
-        return getId();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String component2() {
         return getUsername();
     }
 
@@ -221,7 +187,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public String component3() {
+    public String component2() {
         return getSeries();
     }
 
@@ -229,7 +195,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public String component4() {
+    public String component3() {
         return getToken();
     }
 
@@ -237,7 +203,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public Timestamp component5() {
+    public Timestamp component4() {
         return getLastUsed();
     }
 
@@ -246,14 +212,6 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      */
     @Override
     public String value1() {
-        return getId();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public String value2() {
         return getUsername();
     }
 
@@ -261,7 +219,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public String value3() {
+    public String value2() {
         return getSeries();
     }
 
@@ -269,7 +227,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public String value4() {
+    public String value3() {
         return getToken();
     }
 
@@ -277,7 +235,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public Timestamp value5() {
+    public Timestamp value4() {
         return getLastUsed();
     }
 
@@ -286,15 +244,6 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      */
     @Override
     public AppLoginRecord value1(String value) {
-        setId(value);
-        return this;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public AppLoginRecord value2(String value) {
         setUsername(value);
         return this;
     }
@@ -303,7 +252,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public AppLoginRecord value3(String value) {
+    public AppLoginRecord value2(String value) {
         setSeries(value);
         return this;
     }
@@ -312,7 +261,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public AppLoginRecord value4(String value) {
+    public AppLoginRecord value3(String value) {
         setToken(value);
         return this;
     }
@@ -321,7 +270,7 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public AppLoginRecord value5(Timestamp value) {
+    public AppLoginRecord value4(Timestamp value) {
         setLastUsed(value);
         return this;
     }
@@ -330,12 +279,11 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
      * {@inheritDoc}
      */
     @Override
-    public AppLoginRecord values(String value1, String value2, String value3, String value4, Timestamp value5) {
+    public AppLoginRecord values(String value1, String value2, String value3, Timestamp value4) {
         value1(value1);
         value2(value2);
         value3(value3);
         value4(value4);
-        value5(value5);
         return this;
     }
 
@@ -353,13 +301,12 @@ public class AppLoginRecord extends UpdatableRecordImpl<AppLoginRecord> implemen
     /**
      * Create a detached, initialised AppLoginRecord
      */
-    public AppLoginRecord(String id, String username, String series, String token, Timestamp lastUsed) {
+    public AppLoginRecord(String username, String series, String token, Timestamp lastUsed) {
         super(AppLogin.APP_LOGIN);
 
-        set(0, id);
-        set(1, username);
-        set(2, series);
-        set(3, token);
-        set(4, lastUsed);
+        set(0, username);
+        set(1, series);
+        set(2, token);
+        set(3, lastUsed);
     }
 }

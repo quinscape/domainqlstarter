@@ -34,7 +34,6 @@ public class Indexes {
     // -------------------------------------------------------------------------
 
     public static final Index PK_APP_LOGIN = Indexes0.PK_APP_LOGIN;
-    public static final Index UC_APP_LOGIN_SERIES = Indexes0.UC_APP_LOGIN_SERIES;
     public static final Index PK_APP_USER = Indexes0.PK_APP_USER;
     public static final Index UC_APP_USER_LOGIN = Indexes0.UC_APP_USER_LOGIN;
     public static final Index PK_FOO = Indexes0.PK_FOO;
@@ -45,8 +44,7 @@ public class Indexes {
     // -------------------------------------------------------------------------
 
     private static class Indexes0 {
-        public static Index PK_APP_LOGIN = Internal.createIndex("pk_app_login", AppLogin.APP_LOGIN, new OrderField[] { AppLogin.APP_LOGIN.ID }, true);
-        public static Index UC_APP_LOGIN_SERIES = Internal.createIndex("uc_app_login_series", AppLogin.APP_LOGIN, new OrderField[] { AppLogin.APP_LOGIN.SERIES }, true);
+        public static Index PK_APP_LOGIN = Internal.createIndex("pk_app_login", AppLogin.APP_LOGIN, new OrderField[] { AppLogin.APP_LOGIN.SERIES }, true);
         public static Index PK_APP_USER = Internal.createIndex("pk_app_user", AppUser.APP_USER, new OrderField[] { AppUser.APP_USER.ID }, true);
         public static Index UC_APP_USER_LOGIN = Internal.createIndex("uc_app_user_login", AppUser.APP_USER, new OrderField[] { AppUser.APP_USER.LOGIN }, true);
         public static Index PK_FOO = Internal.createIndex("pk_foo", Foo.FOO, new OrderField[] { Foo.FOO.ID }, true);
