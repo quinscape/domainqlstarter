@@ -21,6 +21,8 @@ public class AppUserDetails
 
     private final Set<GrantedAuthority> authorities;
 
+    private final String id;
+
     private final String password;
 
     private final String login;
@@ -31,6 +33,7 @@ public class AppUserDetails
 
     public AppUserDetails(AppUser appUser)
     {
+        this.id = appUser.getId();
         this.roles = splitRoles(appUser.getRoles());
 
         this.login = appUser.getLogin();
@@ -110,4 +113,9 @@ public class AppUserDetails
         return set;
     }
 
+
+    public String getId()
+    {
+        return id;
+    }
 }

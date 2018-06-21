@@ -17,6 +17,7 @@ import org.jooq.impl.DSL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 
 import javax.annotation.security.RolesAllowed;
@@ -85,8 +86,17 @@ public class DomainqlstarterLogic
     }
 
 
+    /**
+     * Stores a foo object. Example for method security.
+     *
+     * The client side entry point "main" is *not* properly authorized as-is for demo purposes. It allows sending a
+     * storeFoo() to anyone, but the annotation prevents it
+     *
+     * @param foo   Foo to store
+     * @return true
+     */
     @GraphQLMutation
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("(hasRole('ROLE_USER') and hasPermission(#foo, 'dummy')) or hasRole('ROLE_ADMIN')")
     public boolean storeFoo(Foo foo)
     {
         final String id = foo.getId();
