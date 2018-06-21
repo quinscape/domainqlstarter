@@ -1908,12 +1908,12 @@ domain-browser@^1.1.1:
 
 "domainql-form@ssh://git@bitbucket-vm:7999/xcd/domainql-form.git":
   version "0.0.4"
-  resolved "ssh://git@bitbucket-vm:7999/xcd/domainql-form.git#218ef0e6c9f2c32cba4b4ba5ceb078aff16b6311"
+  resolved "ssh://git@bitbucket-vm:7999/xcd/domainql-form.git#fa48838f5f79a2ab5e6233c3ab69d5aac2a85bc6"
   dependencies:
     classnames "^2.2.5"
     lodash.get "^4.4.2"
     lodash.topath "^4.5.2"
-    proptypes "^1.1.0"
+    prop-types "^15.6.1"
 
 "domainql-webpack-plugin@ssh://git@bitbucket-vm:7999/xcd/domainql-webpack-plugin.git":
   version "0.0.3"
@@ -2839,7 +2839,7 @@ json5@^0.5.0, json5@^0.5.1:
 
 "jsview-bootstrap@ssh://git@bitbucket-vm:7999/xcd/jsview-bootstrap":
   version "0.0.1"
-  resolved "ssh://git@bitbucket-vm:7999/xcd/jsview-bootstrap#2c028f06e38547e221d7589bd9c72958534438e8"
+  resolved "ssh://git@bitbucket-vm:7999/xcd/jsview-bootstrap#ca6b4953fb329f557a7989f5470bbd24fd782721"
   dependencies:
     domready "^1.0.8"
 
@@ -3901,10 +3901,6 @@ prop-types@^15.5.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8,
     fbjs "^0.8.16"
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
-
-proptypes@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/proptypes/-/proptypes-1.1.0.tgz#78b3828a5aa6bb1308939e0de3c6044dfd4bd239"
 
 proxyquire@^2.0.1:
   version "2.0.1"
