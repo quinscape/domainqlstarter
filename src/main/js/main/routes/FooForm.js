@@ -1,4 +1,5 @@
 import React from "react"
+import cx from "classnames"
 import FormConfigProvider from "domainql-form/lib/FormConfigProvider";
 import Field from "domainql-form/lib/Field";
 import TextArea from "domainql-form/lib/TextArea";
@@ -16,13 +17,16 @@ import {
 } from "reactstrap";
 import StaticText from "domainql-form/lib/StaticText";
 import Icon from "../../components/Icon";
+import config from "../../services/config";
 
 
 class FooForm extends React.Component {
 
     render()
     {
-        const {schema, control, foo, formConfig} = this.props;
+        const { authentication } = config();
+
+        const { schema, control, foo, formConfig} = this.props;
 
         const { formikProps } = formConfig;
 
@@ -65,7 +69,14 @@ class FooForm extends React.Component {
                     { " " }
                     <button
                         type="submit"
-                        className="btn btn-primary"
+                        className={
+                            cx(
+                                "btn",
+                                // for our badly secured frontend, we just change the color of the button and do
+                                // not disable it like we should.
+                                authentication.id === values.ownerId ? "btn-success" : "btn-danger"
+                            )
+                        }
                     >
                         <Icon className="fa-save"/>
                         { " " }
