@@ -4,7 +4,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 
-import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -20,17 +19,20 @@ public class AppAuthentication
 
         Set<String> roles = new LinkedHashSet<>();
         roles.add("ROLE_ANONYMOUS");
-        ANONYMOUS = new AppAuthentication("anonymous", roles);
+        ANONYMOUS = new AppAuthentication("anonymous", roles, null);
     }
 
     private final String login;
     private final Set<String> roles;
 
+    private final String id;
 
-    private AppAuthentication(String login, Set<String> roles)
+
+    private AppAuthentication(String login, Set<String> roles, String id)
     {
         this.login = login;
         this.roles = roles;
+        this.id = id;
     }
 
     /**
@@ -46,7 +48,7 @@ public class AppAuthentication
         if (authentication != null && authentication.getPrincipal() instanceof AppUserDetails)
         {
             final AppUserDetails details = (AppUserDetails) authentication.getPrincipal();
-            return new AppAuthentication(details.getUsername(), details.getRoles());
+            return new AppAuthentication(details.getUsername(), details.getRoles(), details.getId());
         }
         else
         {
@@ -64,5 +66,11 @@ public class AppAuthentication
     public Set<String> getRoles()
     {
         return roles;
+    }
+
+
+    public String getId()
+    {
+        return id;
     }
 }
