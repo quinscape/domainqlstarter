@@ -40,67 +40,65 @@ class App extends React.Component {
         const { foos, isNavExpanded } = this.state;
 
         return (
-            <Provider store={ store }>
-                <ConnectedRouter history={ history }>
-                    <Container fluid={ false }>
-                        <Navbar color="dark" dark expand="md">
+            <ConnectedRouter history={ history }>
+                <Container fluid={ false }>
+                    <Navbar color="dark" dark expand="md">
 
-                            {/* TODO: replace branding */}
-                            <NavbarBrand href="/">domainqlstarter</NavbarBrand>
-                            <NavbarToggler onClick={ this.toggle }/>
-                            <Collapse isOpen={ isNavExpanded } navbar>
-                                <Nav className="ml-auto" navbar>
-                                    <NavItem>
-                                        <RouterNavLink
-                                            className="nav-link"
-                                            to="/app/lazy/"
-                                        >
-                                            Lazy
-                                        </RouterNavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <RouterNavLink
-                                            className="nav-link"
-                                            to="/app/foo/"
-                                        >
-                                            Foo Admin
-                                        </RouterNavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <RouterNavLink
-                                            className="nav-link"
-                                            to="/app/about/"
-                                        >
-                                            About
-                                        </RouterNavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <a
-                                            className="btn nav-link"
-                                            href="/admin/"
-                                        >
-                                            Admin
-                                        </a>
-                                    </NavItem>
-                                </Nav>
-                            </Collapse>
-                        </Navbar>
-                        <Switch>
-                            <Route exact path="/app/" component={ Home }/>
-                            <Route exact path="/app/foo/" component={ FooAdmin }/>
-                            <Route path="/app/foo/:id/:name" component={ FooAdmin }/>
-                            <Route path="/app/lazy" component={ LazyLoader }/>
-                            <Route path="/app/about" component={ About }/>
-                            <Route path="/app/admin" component={ Admin }/>
-                        </Switch>
-                        <hr/>
-                        <div>
-                            <LogoutForm/>
-                        </div>
+                        {/* TODO: replace branding */}
+                        <NavbarBrand href="/">domainqlstarter</NavbarBrand>
+                        <NavbarToggler onClick={ this.toggle }/>
+                        <Collapse isOpen={ isNavExpanded } navbar>
+                            <Nav className="ml-auto" navbar>
+                                <NavItem>
+                                    <RouterNavLink
+                                        className="nav-link"
+                                        to="/app/lazy/"
+                                    >
+                                        Lazy
+                                    </RouterNavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <RouterNavLink
+                                        className="nav-link"
+                                        to="/app/foo/"
+                                    >
+                                        Foo Admin
+                                    </RouterNavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <RouterNavLink
+                                        className="nav-link"
+                                        to="/app/about/"
+                                    >
+                                        About
+                                    </RouterNavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <a
+                                        className="btn nav-link"
+                                        href="/admin/"
+                                    >
+                                        Admin
+                                    </a>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
+                    </Navbar>
+                    <Switch>
+                        <Route exact path="/app/" component={ Home }/>
+                        <Route exact path="/app/foo/" component={ FooAdmin }/>
+                        <Route path="/app/foo/:id/:name" component={ FooAdmin }/>
+                        <Route path="/app/lazy" component={ LazyLoader }/>
+                        <Route path="/app/about" component={ About }/>
+                        <Route path="/app/admin" component={ Admin }/>
+                    </Switch>
+                    <hr/>
+                    <div>
+                        <LogoutForm/>
+                    </div>
 
-                    </Container>
-                </ConnectedRouter>
-            </Provider>
+                </Container>
+            </ConnectedRouter>
         )
     }
 }
