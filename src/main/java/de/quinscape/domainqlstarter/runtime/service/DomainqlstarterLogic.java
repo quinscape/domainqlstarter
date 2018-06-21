@@ -1,9 +1,12 @@
 package de.quinscape.domainqlstarter.runtime.service;
 
+import de.quinscape.domainql.DomainGenerator;
 import de.quinscape.domainql.annotation.GraphQLField;
 import de.quinscape.domainql.annotation.GraphQLLogic;
 import de.quinscape.domainql.annotation.GraphQLMutation;
 import de.quinscape.domainql.annotation.GraphQLQuery;
+import de.quinscape.domainql.model.Domain;
+import de.quinscape.domainqlstarter.domain.Public;
 import de.quinscape.domainqlstarter.domain.tables.pojos.AppUser;
 import de.quinscape.domainqlstarter.domain.tables.pojos.Foo;
 import de.quinscape.domainqlstarter.domain.tables.records.FooRecord;
@@ -43,9 +46,9 @@ public class DomainqlstarterLogic
     public PagedFoos listFoos(
         DataFetchingEnvironment env,
         @GraphQLField(defaultValue = "0")
-            int offset,
+        int offset,
         @GraphQLField(defaultValue = "100")
-            int limit
+        int limit
     )
     {
         final Map<String, GraphQLFieldDefinition> defs = env.getSelectionSet().getDefinitions();
@@ -123,5 +126,56 @@ public class DomainqlstarterLogic
             .fetchInto(
                 AppUser.class
             );
+    }
+
+
+    /**
+     * Example for to have the current JOOQ classes as DomainQL Schema object.
+     *
+     * <h1>Example Query</h1>
+     * <pre>
+     *     {
+     *     currentDomain
+     *     {
+     *         domainTypes{
+     *             name
+     *             fields{
+     *                 name
+     *                 type
+     *                 required
+     *                 maxLength
+     *                 unique
+     *                 sqlType
+     *                 unique
+     *             }
+     *
+     *             foreignKeys{
+     *                 fields
+     *                 targetType
+     *                 targetFields
+     *             }
+     *             primaryKey{
+     *                 fields
+     *             }
+     *             uniqueConstraints{
+     *                 fields
+     *             }
+     *         }
+     *         enumTypes{
+     *             name
+     *             values
+     *         }
+     *     }
+     * }
+     * </pre>
+     *
+     *
+     * @return
+     */
+
+    @GraphQLQuery
+    public Domain currentDomain()
+    {
+        return DomainGenerator.createDomain(Public.PUBLIC, null);
     }
 }
