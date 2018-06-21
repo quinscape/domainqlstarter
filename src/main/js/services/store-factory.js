@@ -1,7 +1,6 @@
-import { routerMiddleware } from "react-router-redux";
+import { connectRouter, routerMiddleware } from "connected-react-router";
 import { applyMiddleware, createStore } from "redux";
-import { initConfig } from "./config";
-
+import thunk from "redux-thunk";
 
 /**
  * Factory to create the actual redux store. Can be modified to apply local middle ware
@@ -14,16 +13,15 @@ import { initConfig } from "./config";
  */
 export default function (rootReducer, initialState, history)
 {
-    initConfig(initialState);
 
-    // Build the middleware for intercepting and dispatching navigation actions
-    const middleware = routerMiddleware(history);
-
-    // Add the reducer to your store on the `router` key
-    // Also apply our middleware for navigating
     return createStore(
-        rootReducer,
+        connectRouter(history)(rootReducer),
         initialState,
-        applyMiddleware(middleware)
+        applyMiddleware(
+            // connect react-router and redux
+            routerMiddleware(history),
+            // Support thunks for async actions
+            thunk
+        )
     );
 }

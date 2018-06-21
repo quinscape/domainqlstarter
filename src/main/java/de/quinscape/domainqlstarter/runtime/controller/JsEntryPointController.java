@@ -12,6 +12,12 @@ public class JsEntryPointController
         return "main";
     }
 
+    @RequestMapping("/admin/**")
+    public String serveAdminApplicationEndpoint()
+    {
+        return "admin";
+    }
+
     @RequestMapping("/login")
     public String serveLogin()
     {

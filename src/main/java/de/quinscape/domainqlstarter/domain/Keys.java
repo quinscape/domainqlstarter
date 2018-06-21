@@ -53,8 +53,8 @@ public class Keys {
     // FOREIGN KEY definitions
     // -------------------------------------------------------------------------
 
-    public static final ForeignKey<FooRecord, FooTypeRecord> FOO__FK_FOO_TYPE = ForeignKeys0.FOO__FK_FOO_TYPE;
-    public static final ForeignKey<FooRecord, AppUserRecord> FOO__FK_FOO_OWNER = ForeignKeys0.FOO__FK_FOO_OWNER;
+    public static final ForeignKey<FooRecord, FooTypeRecord> FOO__FK_FOO_TYPE_ID = ForeignKeys0.FOO__FK_FOO_TYPE_ID;
+    public static final ForeignKey<FooRecord, AppUserRecord> FOO__FK_FOO_OWNER_ID = ForeignKeys0.FOO__FK_FOO_OWNER_ID;
 
     // -------------------------------------------------------------------------
     // [#1459] distribute members to avoid static initialisers > 64kb
@@ -65,11 +65,11 @@ public class Keys {
         public static final UniqueKey<AppUserRecord> PK_APP_USER = Internal.createUniqueKey(AppUser.APP_USER, "pk_app_user", AppUser.APP_USER.ID);
         public static final UniqueKey<AppUserRecord> UC_APP_USER_LOGIN = Internal.createUniqueKey(AppUser.APP_USER, "uc_app_user_login", AppUser.APP_USER.LOGIN);
         public static final UniqueKey<FooRecord> PK_FOO = Internal.createUniqueKey(Foo.FOO, "pk_foo", Foo.FOO.ID);
-        public static final UniqueKey<FooTypeRecord> PK_FOO_TYPE = Internal.createUniqueKey(FooType.FOO_TYPE, "pk_foo_type", FooType.FOO_TYPE.ORDINAL);
+        public static final UniqueKey<FooTypeRecord> PK_FOO_TYPE = Internal.createUniqueKey(FooType.FOO_TYPE, "pk_foo_type", FooType.FOO_TYPE.ID);
     }
 
     private static class ForeignKeys0 {
-        public static final ForeignKey<FooRecord, FooTypeRecord> FOO__FK_FOO_TYPE = Internal.createForeignKey(de.quinscape.domainqlstarter.domain.Keys.PK_FOO_TYPE, Foo.FOO, "foo__fk_foo_type", Foo.FOO.TYPE);
-        public static final ForeignKey<FooRecord, AppUserRecord> FOO__FK_FOO_OWNER = Internal.createForeignKey(de.quinscape.domainqlstarter.domain.Keys.PK_APP_USER, Foo.FOO, "foo__fk_foo_owner", Foo.FOO.OWNER);
+        public static final ForeignKey<FooRecord, FooTypeRecord> FOO__FK_FOO_TYPE_ID = Internal.createForeignKey(de.quinscape.domainqlstarter.domain.Keys.PK_FOO_TYPE, Foo.FOO, "foo__fk_foo_type_id", Foo.FOO.TYPE_ID);
+        public static final ForeignKey<FooRecord, AppUserRecord> FOO__FK_FOO_OWNER_ID = Internal.createForeignKey(de.quinscape.domainqlstarter.domain.Keys.PK_APP_USER, Foo.FOO, "foo__fk_foo_owner_id", Foo.FOO.OWNER_ID);
     }
 }

@@ -1,17 +1,24 @@
 import React from "react"
+import PropTypes from "prop-types"
 import cx from "classnames"
 
 /**
- * Font-Awesome standard icon.
- *
- * @param props
- * @returns {*}
+ * Font-Awesome solid icon.
  */
-export default function(props)
-{
-    const { className } = props;
+class Icon extends React.Component {
 
-    return (
-        <i className={ cx("fas", className) } />
-    )
-};
+    static propTypes = {
+        className: PropTypes.string,
+        title: PropTypes.string,
+    };
+
+    render()
+    {
+        const { className, title } = this.props;
+
+        return (
+            <i className={ cx("fas", className) } title={ title } />
+        )
+    }
+}
+export default Icon

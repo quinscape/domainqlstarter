@@ -7,110 +7,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c189706e-6336-46c3-91c0-8b9b6e0f1420" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/DefaultCatalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/Indexes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/Keys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/Public.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/Tables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/AppLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/Foo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/FooType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/AppLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/Foo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/FooType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/records/AppLoginRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/records/AppUserRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/records/FooRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/records/FooTypeRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/DomainqlstarterApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppAuthentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppAuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/ClientCrsfToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DefaultPersistentTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DomainConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/GraphQLConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/GraphQLController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/JsEntryPointController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/DomainqlstarterLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/components/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/components/Icon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/components/LogoutForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/routes/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/routes/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/routes/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/routes/Lazy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/routes/LazyLoader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/services/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/services/graphql.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/js/services/store-factory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/domainqlstarter-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/domainqlstarter-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fa-brands.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fa-brands.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fa-regular.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fa-regular.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fa-solid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fa-solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fontawesome-all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fontawesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/quinscape/domainqlstarter/DomainqlstarterApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/de/quinscape/domainqlstarter/TestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/js/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logback-test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../domainql-form/src/ForeignKeySelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/PagedUsers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/js/main/routes/FooForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/js/main/routes/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/js/main/routes/foo-editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/js/util/urlSafe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormConfig.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormConfig.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormConfigPropTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormConfigPropTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormConfigPropTypes.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormConfigPropTypes.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormConfigProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormConfigProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormConfigProvider.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormConfigProvider.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormGroup.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormGroup.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormList.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormList.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/FormSelector.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/FormSelector.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/default-converters.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/default-converters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/default-converters.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/default-converters.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/util/ListHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/util/ListHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/util/ListHelper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/util/ListHelper.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/lib/withForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/lib/withForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/src/FormConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/src/FormConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/src/FormConfigPropTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/src/FormConfigPropTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/src/FormConfigProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/src/FormConfigProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/src/FormGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/src/FormGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/src/FormList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/src/FormList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/src/FormSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/src/FormSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/src/default-converters.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/src/default-converters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/src/util/ListHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/src/util/ListHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domainql-form/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../domainql-form/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/domainqlstarter_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/domainqlstarter_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_quinscape_domainql_domainql_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_quinscape_spring_jsview_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_quinscape_spring_jsview_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domainqlstarter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domainqlstarter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/Indexes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/Indexes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/Keys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/Foo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/Foo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/FooType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/FooType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/Foo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/Foo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/FooType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/FooType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/records/FooRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/records/FooRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/records/FooTypeRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/records/FooTypeRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DefaultPersistentTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DefaultPersistentTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/GraphQLConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/GraphQLConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/JsEntryPointController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/JsEntryPointController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/DomainqlstarterLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/DomainqlstarterLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/actions/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/components/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/components/Icon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/components/Icon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/components/LogoutForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/components/LogoutForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/routes/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/routes/Admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/routes/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/routes/Lazy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/routes/LazyLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/services/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/services/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/services/graphql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/services/graphql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/js/services/store-factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/js/services/store-factory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/quinscape/domainqlstarter/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/quinscape/domainqlstarter/TestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -122,74 +92,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefaultPersistentTokenRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DefaultPersistentTokenRepository.java">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../domainql-form/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-              <folding>
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="630">
+              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppAuthenticationService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppAuthenticationService.java">
+      <file leaf-file-name="ForeignKeySelect.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../domainql-form/src/ForeignKeySelect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-              <folding>
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DomainqlstarterApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/DomainqlstarterApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="InputSchema.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../domainql-form/src/InputSchema.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+      <file leaf-file-name="default-renderers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../domainql-form/src/default-renderers.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalConfig.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../domainql-form/src/GlobalConfig.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/js/admin/actions/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/js/admin/reducers/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/js/main/actions/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCase.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/quinscape/domainqlstarter/TestCase.java">
+      <file leaf-file-name="Field.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../domainql-form/src/Field.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="390">
+              <caret line="101" column="21" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -197,26 +156,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/SecurityConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="106" column="43" lean-forward="true" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersistentTokenRepository.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.5.RELEASE/spring-security-web-5.0.5.RELEASE.jar!/org/springframework/security/web/authentication/rememberme/PersistentTokenRepository.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="273">
+              <caret line="27" selection-start-line="27" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -226,83 +167,116 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>userDetailsServiceBean</find>
-      <find>return false</find>
-      <find>exampleCheck1</find>
-      <find>AppAuthentication</find>
-      <find>fetchSingleInto</find>
-      <find>A</find>
-      <find>\{\s*(\w+)\s*\}</find>
-      <find>\{\s*([\w\-]+)\s*\}</find>
+      <find>alert</find>
+      <find>0.30.4-SNAPSHOT</find>
+      <find>selectedInex</find>
+      <find>selected</find>
+      <find>withUserControl</find>
+      <find>with</find>
+      <find>TextArea</find>
+      <find>owner</find>
+      <find>REFERENCES</find>
+      <find>type</find>
+      <find>ordinal</find>
+      <find>config()</find>
+      <find>target</find>
+      <find>Invalid config name</find>
+      <find>NavLink</find>
+      <find>loadFoos</find>
       <find>\{\s*([\w\.]+)\s*\}</find>
-      <find>domainqlstarter</find>
-      <find>js</find>
+      <find>fooDetail</find>
+      <find>FooAdmin</find>
+      <find>encodeURIComponentPretty</find>
+      <find>loadFooDetail</find>
+      <find>.length</find>
+      <find>conso</find>
+      <find>console</find>
+      <find>storeFoo</find>
+      <find>findNamed</find>
+      <find>react-router-redux</find>
+      <find>ConnectedRouter</find>
+      <find>0.5-SN</find>
+      <find>renderStatic</find>
     </findStrings>
     <replaceStrings>
       <replace>return true</replace>
       <replace>rememberMeCheckbox</replace>
       <replace>AppUserDetails</replace>
-      <replace>{ $1 }</replace>
       <replace>JavaScript</replace>
       <replace>sh</replace>
+      <replace>FOO_PAGING</replace>
+      <replace>console.error</replace>
+      <replace>owner_id</replace>
+      <replace>type_id</replace>
+      <replace>id</replace>
+      <replace>config</replace>
+      <replace>{ $1 }</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../domainql-form" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/DomainqlstarterApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/config/GraphQLConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/service/DomainqlstarterLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/js/routes/About.js" />
-        <option value="$PROJECT_DIR$/src/main/js/routes/Lazy.js" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/config/WebConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/js/routes/LazyLoader.js" />
-        <option value="$PROJECT_DIR$/src/main/js/components/Icon.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/template.html" />
-        <option value="$PROJECT_DIR$/src/main/js/routes/Admin.js" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/LoginControler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/JsEntryPointController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DomainConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppAutentication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppUserDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppAuthentication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/ClientCrsfToken.java" />
-        <option value="$PROJECT_DIR$/src/main/js/services/store-factory.js" />
-        <option value="$PROJECT_DIR$/src/main/js/services/config.js" />
-        <option value="$PROJECT_DIR$/src/main/js/reducers/index.js" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/WebConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/js/main.js" />
-        <option value="$PROJECT_DIR$/src/main/js/login.js" />
-        <option value="$PROJECT_DIR$/src/main/js/components/App.js" />
-        <option value="$PROJECT_DIR$/src/main/js/routes/Home.js" />
-        <option value="$PROJECT_DIR$/src/main/js/components/LogoutLink.js" />
-        <option value="$PROJECT_DIR$/src/main/js/components/LogoutForm.js" />
-        <option value="$PROJECT_DIR$/src/test/js/test.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/test.graphql" />
-        <option value="$PROJECT_DIR$/graphql.config.json" />
         <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DefaultPersistentTokenRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/js/admin/main.js" />
+        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/JsEntryPointController.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/SecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppAuthenticationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/DomainqlstarterApplication.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/main/js/admin/routes/AdminHome.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="/var/www/test/data2.html" />
+        <option value="$PROJECT_DIR$/src/main/js/util/find-index.js" />
+        <option value="$PROJECT_DIR$/src/main/js/util/create-finder.js" />
+        <option value="$PROJECT_DIR$/src/main/js/util/create-index-finder.js" />
+        <option value="$PROJECT_DIR$/src/test/js/cif.js" />
+        <option value="$PROJECT_DIR$/src/test/js/createIndexOf.js" />
+        <option value="$PROJECT_DIR$/src/main/js/util/createIndexOf.js" />
+        <option value="$PROJECT_DIR$/src/main/js/util/byId.js" />
+        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/WebConfiguration.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/quinscape/domainqlstarter/TestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/js/main/routes/home.css.js" />
+        <option value="$PROJECT_DIR$/src/main/js/main/routes/home.css" />
+        <option value="$PROJECT_DIR$/rename.sql" />
+        <option value="$PROJECT_DIR$/src/main/js/util/intercept.js" />
+        <option value="$PROJECT_DIR$/src/main/js/util/readOnly.js" />
+        <option value="$PROJECT_DIR$/src/test/js/config.js" />
+        <option value="$PROJECT_DIR$/src/main/js/services/config.js" />
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/src/main/js/main/routes/Home.js" />
+        <option value="$PROJECT_DIR$/src/main/js/services/graphql.js" />
+        <option value="$PROJECT_DIR$/src/main/js/main/routes/FooEditor.js" />
+        <option value="$PROJECT_DIR$/src/main/js/util/getDisplayName.js" />
+        <option value="$PROJECT_DIR$/src/main/js/util/urlSafe.js" />
+        <option value="$PROJECT_DIR$/src/main/js/main/main.js" />
+        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/GraphQLConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/PagedFoos.java" />
+        <option value="$PROJECT_DIR$/test.graphql" />
+        <option value="$PROJECT_DIR$/src/main/js/main/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/main/js/main/routes/FooAdmin.js" />
+        <option value="$PROJECT_DIR$/src/main/js/main/routes/FooForm.js" />
+        <option value="$PROJECT_DIR$/src/main/js/main/actions/index.js" />
+        <option value="$PROJECT_DIR$/../domainql/src/main/java/de/quinscape/domainql/logic/DomainQLMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/js/main/App.js" />
+        <option value="$PROJECT_DIR$/src/main/js/services/store-factory.js" />
+        <option value="$PROJECT_DIR$/src/main/js/admin/AdminApp.js" />
+        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/PagedUsers.java" />
+        <option value="$PROJECT_DIR$/src/main/js/admin/admin.js" />
+        <option value="$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/DomainqlstarterLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/js/components/LogoutForm.js" />
+        <option value="$PROJECT_DIR$/src/main/js/components/Icon.js" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../domainql-form/package.json" />
+        <option value="$PROJECT_DIR$/../domainql-form/src/ValueModal.js" />
+        <option value="$PROJECT_DIR$/../domainql-form/src/ForeignKeySelect.js" />
       </list>
     </option>
   </component>
@@ -327,6 +301,7 @@
     </option>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/../domainql-form/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
@@ -346,12 +321,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domainql-form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="domainql-form" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
               <item name="domainqlstarter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,80 +354,24 @@
               <item name="domainqlstarter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
               <item name="domainqlstarter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domainqlstarter" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
               <item name="domainqlstarter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domainqlstarter" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="domainqlstarter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domainqlstarter" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: de.quinscape:spring-jsview:0.1" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: de.quinscape:spring-jsview:0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-jsview-0.1.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: de.quinscape:spring-jsview:0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-jsview-0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jsview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: de.quinscape:spring-jsview:0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-jsview-0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jsview" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: de.quinscape:spring-jsview:0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-jsview-0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jsview" type="462c0819:PsiDirectoryNode" />
-              <item name="loader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: de.quinscape:spring-jsview:0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-jsview-0.1.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jsview" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="domainqlstarter" type="b2602c69:ProjectViewProjectNode" />
@@ -453,7 +381,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,11 +391,13 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="byId&#9;FILE&#9;file:///home/sven/ideaprojects/domainqlstarter/src/main/js/util/byId.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.3" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="jsgraphql-schema-editor-notification" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../domainql-form" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -475,17 +405,23 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="de.quinscape.domainqlstarter.runtime.config" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/js/main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../domainql-form/src" />
+      <recent name="$PROJECT_DIR$/src/main/js/admin" />
+      <recent name="$PROJECT_DIR$/src/main/js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="de.quinscape.domainqlstarter.runtime.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/js" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="de.quinscape.domainqlstarter.runtime.service" />
+      <recent name="de.quinscape.domainqlstarter.runtime.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -500,29 +436,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCase.logHashedPW">
+  <component name="RunManager" selected="Tomcat Server.Local Tomcat">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="TestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="domainqlstarter" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="de.quinscape.domainqlstarter" />
-      <option name="MAIN_CLASS_NAME" value="de.quinscape.domainqlstarter.TestCase" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="TestCase.logHashedPW" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="domainqlstarter" />
@@ -574,6 +493,8 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="test.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$" />
     <configuration name="DomainqlstarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="domainqlstarter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="de.quinscape.domainqlstarter.runtime.DomainqlstarterApplication" />
@@ -604,19 +525,57 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
+    <configuration name="config" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs>
+        <env name="BABEL_ENV" value="test" />
+      </envs>
+      <ui>bdd</ui>
+      <extra-mocha-options>-r babel-register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/src/test/js/config.js</test-file>
+      <test-names>
+        <name value="config" />
+      </test-names>
+    </configuration>
+    <configuration name="config.is neutral in production" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs>
+        <env name="BABEL_ENV" value="test" />
+      </envs>
+      <ui>bdd</ui>
+      <extra-mocha-options>-r babel-register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/src/test/js/config.js</test-file>
+      <test-names>
+        <name value="config" />
+        <name value="is neutral in production" />
+      </test-names>
+    </configuration>
     <list>
       <item itemvalue="JUnit.TestCase.name" />
       <item itemvalue="Mocha.All Js Tests" />
       <item itemvalue="Spring Boot.DomainqlstarterApplication" />
       <item itemvalue="Tomcat Server.Local Tomcat" />
-      <item itemvalue="JUnit.TestCase" />
       <item itemvalue="JUnit.TestCase.logHashedPW" />
+      <item itemvalue="Node.js.test.js" />
+      <item itemvalue="Node.js.test.js (1)" />
+      <item itemvalue="Mocha.config" />
+      <item itemvalue="Mocha.config.is neutral in production" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.config" />
+        <item itemvalue="Mocha.config.is neutral in production" />
         <item itemvalue="JUnit.TestCase.logHashedPW" />
-        <item itemvalue="JUnit.TestCase" />
-        <item itemvalue="Mocha.All Js Tests" />
+        <item itemvalue="Node.js.test.js (1)" />
+        <item itemvalue="Node.js.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -633,38 +592,53 @@
       <workItem from="1528900130885" duration="1802000" />
       <workItem from="1528901937225" duration="8475000" />
       <workItem from="1528910768037" duration="7174000" />
-      <workItem from="1528917980833" duration="10438000" />
+      <workItem from="1528917980833" duration="14456000" />
+      <workItem from="1529000970631" duration="81000" />
+      <workItem from="1529001067350" duration="18597000" />
+      <workItem from="1529021151430" duration="6996000" />
+      <workItem from="1529057675364" duration="10386000" />
+      <workItem from="1529088951290" duration="4705000" />
+      <workItem from="1529145992200" duration="24888000" />
+      <workItem from="1529237978670" duration="4543000" />
+      <workItem from="1529317309288" duration="862000" />
+      <workItem from="1529324070996" duration="9489000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCase_name - 2018.06.13 at 20h 32m 14s.xml">
-      <configuration name="TestCase.name" configurationId="JUnit" />
+    <history-entry file="config - 2018.06.15 at 15h 05m 02s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="src_test_js_test_js - 2018.06.14 at 11h 41m 02s.xml">
-      <configuration name="src/test/js/test.js" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="config - 2018.06.15 at 15h 05m 15s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="All_Js_Tests - 2018.06.14 at 11h 42m 51s.xml">
-      <configuration name="All Js Tests" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="config - 2018.06.15 at 15h 07m 28s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="All_Js_Tests - 2018.06.14 at 11h 43m 12s.xml">
-      <configuration name="All Js Tests" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="config - 2018.06.15 at 15h 11m 20s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="All_Js_Tests - 2018.06.14 at 11h 43m 43s.xml">
-      <configuration name="All Js Tests" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="config - 2018.06.15 at 15h 11m 35s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="All_Js_Tests - 2018.06.14 at 11h 44m 35s.xml">
-      <configuration name="All Js Tests" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="config - 2018.06.15 at 15h 11m 55s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="TestCase - 2018.06.14 at 13h 09m 13s.xml">
-      <configuration name="TestCase" configurationId="JUnit" />
+    <history-entry file="config - 2018.06.15 at 15h 24m 10s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="TestCase_logHashedPW - 2018.06.14 at 13h 10m 07s.xml">
-      <configuration name="TestCase.logHashedPW" configurationId="JUnit" />
+    <history-entry file="config - 2018.06.15 at 15h 24m 57s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="config - 2018.06.15 at 15h 25m 16s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="config - 2018.06.15 at 15h 25m 50s.xml">
+      <configuration name="config" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27889000" />
+    <option name="totallyTimeSpent" value="112454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
@@ -676,18 +650,17 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="GraphQL" order="7" weight="0.3297414" />
+      <window_info anchor="bottom" id="GraphQL" order="7" weight="0.15948276" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297414" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22310969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2428115" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -698,12 +671,13 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297414" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21884984" />
@@ -712,20 +686,20 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info id="Designer" order="3" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
@@ -739,14 +713,27 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../spring-jsview/src/main/java/de/quinscape/spring/jsview/JsView.java</url>
-          <line>98</line>
+          <url>file://$PROJECT_DIR$/../domainql/src/main/java/de/quinscape/domainql/logic/DomainQLMethod.java</url>
+          <line>77</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../domainql/src/main/java/de/quinscape/domainql/logic/GraphQLValueProvider.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -771,383 +758,322 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.5.RELEASE/spring-security-config-5.0.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/SecurityConfigurer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java/8.0/graphql-java-8.0-sources.jar!/graphql/execution/ValuesResolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="83">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.5.RELEASE/spring-security-config-5.0.5.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java/8.0/graphql-java-8.0-sources.jar!/graphql/execution/Execution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+        <state relative-caret-position="83">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/LoginController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/JsEntryPointController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="83">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/de/quinscape/spring-jsview/0.1/spring-jsview-0.1.jar!/de/quinscape/spring/jsview/DefaultJsViewContext.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="83">
+          <caret line="570" selection-start-line="570" selection-end-line="570" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/de/quinscape/spring-jsview/0.1/spring-jsview-0.1.jar!/de/quinscape/spring/jsview/JsViewContext.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="67">
+          <caret line="425" selection-start-line="425" selection-end-line="425" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/de/quinscape/domainql/domainql/0.3/domainql-0.3.jar!/de/quinscape/domainql/preload/PreloadedGraphQLQueryProvider.class">
+    <entry file="file://$PROJECT_DIR$/src/main/js/util/getDisplayName.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/umd/react-router-dom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="261">
+          <caret line="2592" column="60" selection-start-line="2592" selection-start-column="36" selection-end-line="2592" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../domainql/src/main/java/de/quinscape/domainql/preload/PreloadedGraphQLQueryProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/de/quinscape/spring-jsview/0.1/spring-jsview-0.1.jar!/de/quinscape/spring/jsview/JsViewProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-jsview/src/main/java/de/quinscape/spring/jsview/JsViewContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domainqlstarter-prod.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domainqlstarter-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DomainConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-jsview/src/main/java/de/quinscape/spring/jsview/ModelMapProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-jsview/src/main/java/de/quinscape/spring/jsview/JsViewResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="160" column="52" selection-start-line="160" selection-start-column="52" selection-end-line="160" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-jsview/src/main/java/de/quinscape/spring/jsview/JsViewProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jooq/jooq/3.10.6/jooq-3.10.6-sources.jar!/org/jooq/impl/SelectImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36345">
-          <caret line="2879" selection-start-line="2879" selection-end-line="2879" />
-          <folding>
-            <element signature="e#106488#106489#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/jdk1.8/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="2612" selection-start-line="2612" selection-end-line="2612" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-jsview/src/main/java/de/quinscape/spring/jsview/DefaultJsViewContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1625#1626#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../spring-jsview/src/main/java/de/quinscape/spring/jsview/JsView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/svenson/svenson/1.5.8/svenson-1.5.8-sources.jar!/org/svenson/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="389" selection-start-line="389" selection-end-line="389" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppAuthentication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppUserDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-redux/lib/index.js">
+    <entry file="file://$PROJECT_DIR$/src/main/js/util/urlSafe.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/services/config.js">
+    <entry file="file://$PROJECT_DIR$/src/main/js/main/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="255">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/GraphQLConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java/8.0/graphql-java-8.0-sources.jar!/graphql/Directives.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/JsEntryPointController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java/8.0/graphql-java-8.0-sources.jar!/graphql/schema/GraphQLSchema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1286">
+          <caret line="270" selection-start-line="270" selection-end-line="270" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/main/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/util/byId.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domainql-form/src/withForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/domainql-form/lib/withForm.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/main/routes/FooForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/main/routes/FooAdmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/domain/tables/pojos/Foo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/controller/GraphQLController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/de/quinscape/domainql/domainql/0.5-SNAPSHOT/domainql-0.5-SNAPSHOT.jar!/de/quinscape/domainql/logic/DomainQLMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domainql/src/main/java/de/quinscape/domainql/logic/GraphQLValueProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java/8.0/graphql-java-8.0-sources.jar!/graphql/GraphQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7395">
+          <caret line="499" selection-start-line="499" selection-end-line="499" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domainql/src/main/java/de/quinscape/domainql/logic/DomainQLMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/main/routes/Admin.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/main/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/js/services/store-factory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/ClientCrsfToken.java">
+    <entry file="file://$PROJECT_DIR$/src/main/js/admin/AdminApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="150">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/PagedFoos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/PagedUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/reducers/index.js">
+    <entry file="file://$PROJECT_DIR$/src/main/js/admin/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="795">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/WebConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/service/DomainqlstarterLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="1230">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/login.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.5.RELEASE/spring-security-core-5.0.5.RELEASE.jar!/org/springframework/security/access/prepost/PreAuthorize.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="93" selection-start-line="39" selection-start-column="93" selection-end-line="39" selection-end-column="93" />
+        <state relative-caret-position="225">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/main.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.5.RELEASE/spring-security-core-5.0.5.RELEASE-sources.jar!/org/springframework/security/access/prepost/PreAuthorize.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="79" column="72" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/routes/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/js/components/LogoutForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphql.config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.5.RELEASE/spring-security-web-5.0.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/rememberme/PersistentTokenBasedRememberMeServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="139" column="28" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.5.RELEASE/spring-security-web-5.0.5.RELEASE-sources.jar!/org/springframework/security/web/authentication/rememberme/PersistentTokenRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.0.5.RELEASE/spring-security-web-5.0.5.RELEASE.jar!/org/springframework/security/web/authentication/rememberme/PersistentTokenRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/SecurityConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="106" column="43" lean-forward="true" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/DefaultPersistentTokenRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-          <folding>
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/config/AppAuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-          <folding>
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/quinscape/domainqlstarter/runtime/DomainqlstarterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="315">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/components/LogoutForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/components/Icon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" selection-start-line="32" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domainql-form/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="273">
+          <caret line="27" selection-start-line="27" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../domainql-form/src/Field.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="101" column="21" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/admin/actions/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/js/admin/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/js/main/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/quinscape/domainqlstarter/TestCase.java">
+    <entry file="file://$PROJECT_DIR$/../domainql-form/src/GlobalConfig.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domainql-form/src/default-renderers.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domainql-form/src/InputSchema.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../domainql-form/src/ForeignKeySelect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
         </state>
       </provider>
     </entry>

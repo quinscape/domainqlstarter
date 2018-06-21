@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="domainqlstarter:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="domainqlstarter.war">
+      <element id="artifact" artifact-name="domainqlstarter:war exploded" />
+    </root>
+  </artifact>
+</component>

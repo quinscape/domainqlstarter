@@ -29,39 +29,39 @@ import javax.validation.constraints.Size;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 @Entity
 @Table(name = "foo_type", schema = "public", indexes = {
-    @Index(name = "pk_foo_type", unique = true, columnList = "ordinal ASC")
+    @Index(name = "pk_foo_type", unique = true, columnList = "id ASC")
 })
 public class FooType implements Serializable {
 
-    private static final long serialVersionUID = 14205562;
+    private static final long serialVersionUID = -1912102038;
 
-    private Integer ordinal;
+    private Integer id;
     private String  name;
 
     public FooType() {}
 
     public FooType(FooType value) {
-        this.ordinal = value.ordinal;
+        this.id = value.id;
         this.name = value.name;
     }
 
     public FooType(
-        Integer ordinal,
+        Integer id,
         String  name
     ) {
-        this.ordinal = ordinal;
+        this.id = id;
         this.name = name;
     }
 
     @Id
-    @Column(name = "ordinal", unique = true, nullable = false, precision = 32)
+    @Column(name = "id", unique = true, nullable = false, precision = 32)
     @NotNull
-    public Integer getOrdinal() {
-        return this.ordinal;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setOrdinal(Integer ordinal) {
-        this.ordinal = ordinal;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     @Column(name = "name", nullable = false, length = 100)
@@ -79,7 +79,7 @@ public class FooType implements Serializable {
     public String toString() {
         StringBuilder sb = new StringBuilder("FooType (");
 
-        sb.append(ordinal);
+        sb.append(id);
         sb.append(", ").append(name);
 
         sb.append(")");

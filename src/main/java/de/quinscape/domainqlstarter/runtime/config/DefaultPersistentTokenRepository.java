@@ -2,6 +2,8 @@ package de.quinscape.domainqlstarter.runtime.config;
 
 import de.quinscape.domainqlstarter.domain.tables.pojos.AppLogin;
 import org.jooq.DSLContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.web.authentication.rememberme.PersistentRememberMeToken;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
@@ -17,6 +19,8 @@ import static de.quinscape.domainqlstarter.domain.Tables.*;
 public class DefaultPersistentTokenRepository
     implements PersistentTokenRepository
 {
+    private final static Logger log = LoggerFactory.getLogger(DefaultPersistentTokenRepository.class);
+
     private final DSLContext dslContext;
 
 
@@ -29,27 +33,43 @@ public class DefaultPersistentTokenRepository
     public void createNewToken(PersistentRememberMeToken token)
     {
 
-        AppLogin login = new AppLogin();
-        login.setUsername(token.getUsername());
-        login.setToken(token.getTokenValue());
-        login.setSeries(token.getSeries());
-        login.setLastUsed(new Timestamp(token.getDate().getTime()));
+        try
+        {
+            AppLogin login = new AppLogin();
+            login.setUsername(token.getUsername());
+            login.setToken(token.getTokenValue());
+            login.setSeries(token.getSeries());
+            login.setLastUsed(new Timestamp(token.getDate().getTime()));
 
-        dslContext.executeUpdate(dslContext.newRecord(APP_LOGIN, login));
+            dslContext.executeInsert(dslContext.newRecord(APP_LOGIN, login));
+        }
+        catch (Exception e)
+        {
+            log.error("Error creating new token: " + token, e);
+        }
     }
 
 
     public void updateToken(String series, String tokenValue, Date lastUsed)
     {
-        final AppLogin login = findLoginForSeries(series);
-
-        if (login == null)
+        try
         {
-            throw new IllegalStateException("No token found for series " + series);
+            final AppLogin login = findLoginForSeries(series);
+
+            if (login == null)
+            {
+                throw new IllegalStateException("No token found for series " + series);
+            }
+
+            login.setToken(tokenValue);
+            login.setLastUsed(new Timestamp(lastUsed.getTime()));
+
+            dslContext.executeUpdate(dslContext.newRecord(APP_LOGIN, login));
         }
-        
-        login.setToken(tokenValue);
-        login.setLastUsed(new Timestamp(lastUsed.getTime()));
+        catch (Exception e)
+        {
+            log.error("Error updating token: " + series + ", value = " + tokenValue + ", lastUsed = " + lastUsed, e);
+        }
     }
 
 
@@ -84,18 +104,26 @@ public class DefaultPersistentTokenRepository
     public PersistentRememberMeToken getTokenForSeries(String seriesId)
     {
 
-        final AppLogin login = findLoginForSeries(seriesId);
-        if (login == null)
+        try
         {
-            throw new IllegalStateException("No login for series " + seriesId);
+            final AppLogin login = findLoginForSeries(seriesId);
+            if (login == null)
+            {
+                return null;
+            }
+
+            return new PersistentRememberMeToken(
+                login.getUsername(),
+                login.getSeries(),
+                login.getToken(),
+                login.getLastUsed()
+            );
         }
-        
-        return new PersistentRememberMeToken(
-            login.getUsername(),
-            login.getSeries(),
-            login.getToken(),
-            login.getLastUsed()
-        );
+        catch (Exception e)
+        {
+            log.error("Error getting token for series" + seriesId, e);
+            return null;
+        }
     }
 
 

@@ -41,7 +41,7 @@ import org.jooq.impl.UpdatableRecordImpl;
 })
 public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7<String, String, Integer, Integer, Timestamp, String, String> {
 
-    private static final long serialVersionUID = 212526380;
+    private static final long serialVersionUID = -1580835160;
 
     /**
      * Setter for <code>public.foo.id</code>.
@@ -95,18 +95,18 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
     }
 
     /**
-     * Setter for <code>public.foo.type</code>.
+     * Setter for <code>public.foo.type_id</code>.
      */
-    public void setType(Integer value) {
+    public void setTypeId(Integer value) {
         set(3, value);
     }
 
     /**
-     * Getter for <code>public.foo.type</code>.
+     * Getter for <code>public.foo.type_id</code>.
      */
-    @Column(name = "type", nullable = false, precision = 32)
+    @Column(name = "type_id", nullable = false, precision = 32)
     @NotNull
-    public Integer getType() {
+    public Integer getTypeId() {
         return (Integer) get(3);
     }
 
@@ -142,19 +142,19 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
     }
 
     /**
-     * Setter for <code>public.foo.owner</code>.
+     * Setter for <code>public.foo.owner_id</code>.
      */
-    public void setOwner(String value) {
+    public void setOwnerId(String value) {
         set(6, value);
     }
 
     /**
-     * Getter for <code>public.foo.owner</code>.
+     * Getter for <code>public.foo.owner_id</code>.
      */
-    @Column(name = "owner", nullable = false, length = 36)
+    @Column(name = "owner_id", nullable = false, length = 36)
     @NotNull
     @Size(max = 36)
-    public String getOwner() {
+    public String getOwnerId() {
         return (String) get(6);
     }
 
@@ -219,7 +219,7 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
      */
     @Override
     public Field<Integer> field4() {
-        return Foo.FOO.TYPE;
+        return Foo.FOO.TYPE_ID;
     }
 
     /**
@@ -243,7 +243,7 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
      */
     @Override
     public Field<String> field7() {
-        return Foo.FOO.OWNER;
+        return Foo.FOO.OWNER_ID;
     }
 
     /**
@@ -275,7 +275,7 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
      */
     @Override
     public Integer component4() {
-        return getType();
+        return getTypeId();
     }
 
     /**
@@ -299,7 +299,7 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
      */
     @Override
     public String component7() {
-        return getOwner();
+        return getOwnerId();
     }
 
     /**
@@ -331,7 +331,7 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
      */
     @Override
     public Integer value4() {
-        return getType();
+        return getTypeId();
     }
 
     /**
@@ -355,7 +355,7 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
      */
     @Override
     public String value7() {
-        return getOwner();
+        return getOwnerId();
     }
 
     /**
@@ -390,7 +390,7 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
      */
     @Override
     public FooRecord value4(Integer value) {
-        setType(value);
+        setTypeId(value);
         return this;
     }
 
@@ -417,7 +417,7 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
      */
     @Override
     public FooRecord value7(String value) {
-        setOwner(value);
+        setOwnerId(value);
         return this;
     }
 
@@ -450,15 +450,15 @@ public class FooRecord extends UpdatableRecordImpl<FooRecord> implements Record7
     /**
      * Create a detached, initialised FooRecord
      */
-    public FooRecord(String id, String name, Integer num, Integer type, Timestamp created, String description, String owner) {
+    public FooRecord(String id, String name, Integer num, Integer typeId, Timestamp created, String description, String ownerId) {
         super(Foo.FOO);
 
         set(0, id);
         set(1, name);
         set(2, num);
-        set(3, type);
+        set(3, typeId);
         set(4, created);
         set(5, description);
-        set(6, owner);
+        set(6, ownerId);
     }
 }

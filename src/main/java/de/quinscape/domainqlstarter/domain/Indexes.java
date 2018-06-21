@@ -48,6 +48,6 @@ public class Indexes {
         public static Index PK_APP_USER = Internal.createIndex("pk_app_user", AppUser.APP_USER, new OrderField[] { AppUser.APP_USER.ID }, true);
         public static Index UC_APP_USER_LOGIN = Internal.createIndex("uc_app_user_login", AppUser.APP_USER, new OrderField[] { AppUser.APP_USER.LOGIN }, true);
         public static Index PK_FOO = Internal.createIndex("pk_foo", Foo.FOO, new OrderField[] { Foo.FOO.ID }, true);
-        public static Index PK_FOO_TYPE = Internal.createIndex("pk_foo_type", FooType.FOO_TYPE, new OrderField[] { FooType.FOO_TYPE.ORDINAL }, true);
+        public static Index PK_FOO_TYPE = Internal.createIndex("pk_foo_type", FooType.FOO_TYPE, new OrderField[] { FooType.FOO_TYPE.ID }, true);
     }
 }

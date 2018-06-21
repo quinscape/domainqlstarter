@@ -8,7 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/de/quinscape/spring-jsview/0.1/spring-jsview-0.1-sources.jar!/" />
-      <root url="file://$PROJECT_DIR$/../spring-jsview/src/main/java" />
     </SOURCES>
   </library>
 </component>

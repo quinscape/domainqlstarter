@@ -1,5 +1,5 @@
 import React from "react"
-import Icon from "../components/Icon";
+import Icon from "../../components/Icon";
 
 
 /**
@@ -9,19 +9,17 @@ import Icon from "../components/Icon";
  *
  * You can also split the authenticated parts into their own end point, of course.
  */
-class Admin extends React.Component {
+class AdminHome extends React.Component {
 
     render()
     {
         return (
             <div>
-                <h1> Admin </h1>
-                <p>
-                    <Icon className="text-info fa-info-circle"/> Protected route
-                </p>
+                <br/>
+                <h1><Icon className="text-info fa-info-circle"/> Admin: Access controlled entry point </h1>
             </div>
         )
     }
 }
 
-export default Admin
+export default AdminHome

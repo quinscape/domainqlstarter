@@ -25,7 +25,7 @@ The starter project includes the following libraries / technologies:
  * Mocha tests with power-asserts (integrated into maven build)
  
 ### Client
-
+ * fetch / Promise polyfills
  * React
  * react-router
  * reactstrap

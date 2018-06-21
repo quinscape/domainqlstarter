@@ -21,7 +21,8 @@ if (!fs.existsSync(JS_OUTPUT_DIRECTORY))
 module.exports = {
     mode: process.env.NODE_ENV,
     entry: {
-        main: "./src/main/js/main.js",
+        main: "./src/main/js/main/main.js",
+        admin: "./src/main/js/admin/admin.js",
         login: "./src/main/js/login.js"
     },
 
@@ -47,7 +48,9 @@ module.exports = {
 
         // clean old assets and generate webpack-assets.json
         new JsViewPlugin(),
-        new PreloadQueriesPlugin(),
+        new PreloadQueriesPlugin({
+            //debug: true
+        }),
         new TrackUsagePlugin({
             output: path.join( JS_OUTPUT_DIRECTORY, "/track-usage.json")
         })

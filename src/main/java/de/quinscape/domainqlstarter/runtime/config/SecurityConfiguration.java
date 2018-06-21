@@ -50,7 +50,7 @@ public class SecurityConfiguration
             ).permitAll()
 
             // TODO: consider protected routes
-            .antMatchers("/app/admin/**")
+            .antMatchers("/admin/**")
                 .hasRole("ADMIN")
 
             .and()

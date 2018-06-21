@@ -1,6 +1,7 @@
 package de.quinscape.domainqlstarter.runtime.config;
 
 import de.quinscape.domainql.preload.PreloadedGraphQLQueryProvider;
+import de.quinscape.domainql.schema.SchemaDataProvider;
 import de.quinscape.spring.jsview.JsViewResolver;
 import de.quinscape.spring.jsview.loader.ResourceLoader;
 import graphql.schema.GraphQLSchema;
@@ -41,13 +42,18 @@ public class WebConfiguration
         registry.viewResolver(
             JsViewResolver.newResolver(servletContext, "WEB-INF/template.html")
                 .withResourceLoader(resourceLoader)
+
                 .withViewDataProvider(
                     new PreloadedGraphQLQueryProvider(
                         graphQLSchema,
                         resourceLoader
                     )
                 )
-
+                .withViewDataProvider(
+                    new SchemaDataProvider(
+                        graphQLSchema
+                    )
+                )
                 .withViewDataProvider( ctx -> {
 
                     final CsrfToken token = (CsrfToken) ctx.getRequest().getAttribute("_csrf");

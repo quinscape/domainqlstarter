@@ -34,15 +34,15 @@ import javax.validation.constraints.Size;
 })
 public class Foo implements Serializable {
 
-    private static final long serialVersionUID = -52353809;
+    private static final long serialVersionUID = 1784662697;
 
     private String    id;
     private String    name;
     private Integer   num;
-    private Integer   type;
+    private Integer   typeId;
     private Timestamp created;
     private String    description;
-    private String    owner;
+    private String    ownerId;
 
     public Foo() {}
 
@@ -50,28 +50,28 @@ public class Foo implements Serializable {
         this.id = value.id;
         this.name = value.name;
         this.num = value.num;
-        this.type = value.type;
+        this.typeId = value.typeId;
         this.created = value.created;
         this.description = value.description;
-        this.owner = value.owner;
+        this.ownerId = value.ownerId;
     }
 
     public Foo(
         String    id,
         String    name,
         Integer   num,
-        Integer   type,
+        Integer   typeId,
         Timestamp created,
         String    description,
-        String    owner
+        String    ownerId
     ) {
         this.id = id;
         this.name = name;
         this.num = num;
-        this.type = type;
+        this.typeId = typeId;
         this.created = created;
         this.description = description;
-        this.owner = owner;
+        this.ownerId = ownerId;
     }
 
     @Id
@@ -107,14 +107,14 @@ public class Foo implements Serializable {
         this.num = num;
     }
 
-    @Column(name = "type", nullable = false, precision = 32)
+    @Column(name = "type_id", nullable = false, precision = 32)
     @NotNull
-    public Integer getType() {
-        return this.type;
+    public Integer getTypeId() {
+        return this.typeId;
     }
 
-    public void setType(Integer type) {
-        this.type = type;
+    public void setTypeId(Integer typeId) {
+        this.typeId = typeId;
     }
 
     @Column(name = "created", nullable = false)
@@ -136,15 +136,15 @@ public class Foo implements Serializable {
         this.description = description;
     }
 
-    @Column(name = "owner", nullable = false, length = 36)
+    @Column(name = "owner_id", nullable = false, length = 36)
     @NotNull
     @Size(max = 36)
-    public String getOwner() {
-        return this.owner;
+    public String getOwnerId() {
+        return this.ownerId;
     }
 
-    public void setOwner(String owner) {
-        this.owner = owner;
+    public void setOwnerId(String ownerId) {
+        this.ownerId = ownerId;
     }
 
     @Override
@@ -154,10 +154,10 @@ public class Foo implements Serializable {
         sb.append(id);
         sb.append(", ").append(name);
         sb.append(", ").append(num);
-        sb.append(", ").append(type);
+        sb.append(", ").append(typeId);
         sb.append(", ").append(created);
         sb.append(", ").append(description);
-        sb.append(", ").append(owner);
+        sb.append(", ").append(ownerId);
 
         sb.append(")");
         return sb.toString();

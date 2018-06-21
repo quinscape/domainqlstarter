@@ -8,7 +8,7 @@ import {
     Switch
 } from "react-router-dom"
 
-import { ConnectedRouter } from "react-router-redux"
+import { ConnectedRouter } from "connected-react-router"
 
 import {
     Collapse,
@@ -20,11 +20,9 @@ import {
     NavItem,
 } from "reactstrap"
 
-import LazyLoader from "../routes/LazyLoader";
-import About from "../routes/About";
-import Home from "../routes/Home";
-import Admin from "../routes/Admin";
-import LogoutForm from "./LogoutForm";
+import About from "./routes/About";
+import AdminHome from "./routes/AdminHome";
+import LogoutForm from "../components/LogoutForm";
 
 class App extends React.Component {
 
@@ -52,35 +50,17 @@ class App extends React.Component {
                                     <NavItem>
                                         <RouterNavLink
                                             className="nav-link"
-                                            to="/app/lazy/"
-                                        >
-                                            Lazy
-                                        </RouterNavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <RouterNavLink
-                                            className="nav-link"
-                                            to="/app/about/"
+                                            to="/admin/about/"
                                         >
                                             About
                                         </RouterNavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <a
-                                            className="btn nav-link"
-                                            href="/app/admin/"
-                                        >
-                                            Admin
-                                        </a>
                                     </NavItem>
                                 </Nav>
                             </Collapse>
                         </Navbar>
                         <Switch>
-                            <Route exact path="/app/" component={ Home }/>
-                            <Route path="/app/lazy" component={ LazyLoader }/>
-                            <Route path="/app/about" component={ About }/>
-                            <Route path="/app/admin" component={ Admin }/>
+                            <Route exact path="/admin/" component={ AdminHome }/>
+                            <Route path="/admin/about" component={ About }/>
                         </Switch>
                         <hr/>
                         <div>

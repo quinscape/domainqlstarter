@@ -12,7 +12,7 @@ public class TestCase
     @Test
     public void logHashedPW()
     {
-        logHash("admin");
+        logHash("user");
     }
 
     private void logHash(String password)

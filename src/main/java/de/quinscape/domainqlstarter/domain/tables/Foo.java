@@ -40,7 +40,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Foo extends TableImpl<FooRecord> {
 
-    private static final long serialVersionUID = 2041282870;
+    private static final long serialVersionUID = -1649781362;
 
     /**
      * The reference instance of <code>public.foo</code>
@@ -71,9 +71,9 @@ public class Foo extends TableImpl<FooRecord> {
     public final TableField<FooRecord, Integer> NUM = createField("num", org.jooq.impl.SQLDataType.INTEGER.nullable(false), this, "");
 
     /**
-     * The column <code>public.foo.type</code>.
+     * The column <code>public.foo.type_id</code>.
      */
-    public final TableField<FooRecord, Integer> TYPE = createField("type", org.jooq.impl.SQLDataType.INTEGER.nullable(false), this, "");
+    public final TableField<FooRecord, Integer> TYPE_ID = createField("type_id", org.jooq.impl.SQLDataType.INTEGER.nullable(false), this, "");
 
     /**
      * The column <code>public.foo.created</code>.
@@ -86,9 +86,9 @@ public class Foo extends TableImpl<FooRecord> {
     public final TableField<FooRecord, String> DESCRIPTION = createField("description", org.jooq.impl.SQLDataType.CLOB, this, "");
 
     /**
-     * The column <code>public.foo.owner</code>.
+     * The column <code>public.foo.owner_id</code>.
      */
-    public final TableField<FooRecord, String> OWNER = createField("owner", org.jooq.impl.SQLDataType.VARCHAR(36).nullable(false), this, "");
+    public final TableField<FooRecord, String> OWNER_ID = createField("owner_id", org.jooq.impl.SQLDataType.VARCHAR(36).nullable(false), this, "");
 
     /**
      * Create a <code>public.foo</code> table reference
@@ -156,7 +156,7 @@ public class Foo extends TableImpl<FooRecord> {
      */
     @Override
     public List<ForeignKey<FooRecord, ?>> getReferences() {
-        return Arrays.<ForeignKey<FooRecord, ?>>asList(Keys.FOO__FK_FOO_TYPE, Keys.FOO__FK_FOO_OWNER);
+        return Arrays.<ForeignKey<FooRecord, ?>>asList(Keys.FOO__FK_FOO_TYPE_ID, Keys.FOO__FK_FOO_OWNER_ID);
     }
 
     /**

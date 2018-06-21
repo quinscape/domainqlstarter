@@ -63,8 +63,8 @@ public class GraphQLConfiguration
             .objectTypes(Public.PUBLIC)
             .createMirrorInputTypes(true)
             // configure object creation for schema relationships
-            .configureRelation( FOO.TYPE, SourceField.OBJECT, TargetField.NONE)
-            .configureRelation( FOO.OWNER, SourceField.OBJECT, TargetField.MANY)
+            .configureRelation( FOO.TYPE_ID, SourceField.OBJECT_AND_SCALAR, TargetField.NONE)
+            .configureRelation( FOO.OWNER_ID, SourceField.OBJECT_AND_SCALAR, TargetField.MANY)
             .buildGraphQLSchema();
     }
 
