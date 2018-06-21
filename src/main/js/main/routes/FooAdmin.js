@@ -83,7 +83,7 @@ class FooAdmin extends React.Component {
             <React.Fragment>
                 <div className="row">
                     <div className="col">
-                        <h1> domainqlstarter Home </h1>
+                        <h1> Foo Admin </h1>
                     </div>
                 </div>
                 <hr/>
@@ -97,7 +97,7 @@ class FooAdmin extends React.Component {
                                             foos.length === 0 && "No Foos"
                                         }
                                         {
-                                            foos.map((foo, idx) => (
+                                            foos.map( foo => (
                                                 <ListGroupItem
                                                     key={ foo.id }
                                                     active={fooDetail && fooDetail.id === foo.id}
@@ -176,9 +176,9 @@ const mapDispatchToProps = ({
 });
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(FooAdmin)
+        mapStateToProps,
+        mapDispatchToProps
+    )(FooAdmin)
 
 /**
  (
