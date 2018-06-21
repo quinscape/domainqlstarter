@@ -25,6 +25,7 @@ import Home from "./routes/Home";
 import FooAdmin from "./routes/FooAdmin";
 import Admin from "./routes/Admin";
 import LogoutForm from "../components/LogoutForm";
+import Icon from "../components/Icon";
 
 class App extends React.Component {
 
@@ -45,7 +46,12 @@ class App extends React.Component {
                     <Navbar color="dark" dark expand="md">
 
                         {/* TODO: replace branding */}
-                        <NavbarBrand href="/">domainqlstarter</NavbarBrand>
+                        <NavbarBrand href="/">
+                            <Icon className="fab fa-quinscape"/>
+                            {
+                                " domainqlstarter"
+                            }
+                        </NavbarBrand>
                         <NavbarToggler onClick={ this.toggle }/>
                         <Collapse isOpen={ isNavExpanded } navbar>
                             <Nav className="ml-auto" navbar>
