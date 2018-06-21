@@ -47,7 +47,7 @@
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.3" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
-          <element id="library" level="project" name="Maven: de.quinscape.domainql:domainql:0.5" />
+          <element id="library" level="project" name="Maven: de.quinscape.domainql:domainql:0.6-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.atteo:evo-inflector:1.2.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.6.RELEASE" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:24.1-jre" />
