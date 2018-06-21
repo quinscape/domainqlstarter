@@ -30,6 +30,7 @@ export default function (params) {
             window.location.origin + contextPath + "/graphql",
             {
                 method: "POST",
+                credentials: "same-origin",
                 headers: {
                     "Content-Type": "application/json",
 
