@@ -1,5 +1,6 @@
 package de.quinscape.domainqlstarter.runtime.config;
 
+import de.quinscape.domainqlstarter.runtime.controller.GraphQLController;
 import org.jooq.DSLContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +10,6 @@ import org.springframework.context.annotation.Import;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -29,16 +29,16 @@ public class SecurityConfiguration
 
     private final DSLContext dslContext;
 
-    private final boolean ignoreGraphQLEndpoint;
+    private final boolean allowDevGraphQLAccess;
 
-    private static String GRAPHQL_URI = "/graphql";
 
     private final static String[] PUBLIC_URIS = new String[]
         {
             "/index.jsp",
             "/error",
             "/js/**",
-            GRAPHQL_URI,
+            GraphQLController.GRAPHQL_URI,
+            GraphQLController.GRAPHQL_DEV_URI,
             "/css/**",
             "/webfonts/**",
             "/"
@@ -48,11 +48,13 @@ public class SecurityConfiguration
     @Autowired
     public SecurityConfiguration(
         DSLContext dslContext,
-        @Value("${domainql.allow-external-graphql:false}")
-        boolean ignoreGraphQLEndpoint)
+        // TODO: rename property parallel to changing it in domainqlstarter-dev.properties
+        @Value("${domainqlstarter.graphql.dev:false}")
+        boolean allowDevGraphQLAccess
+    )
     {
         this.dslContext = dslContext;
-        this.ignoreGraphQLEndpoint = ignoreGraphQLEndpoint;
+        this.allowDevGraphQLAccess = allowDevGraphQLAccess;
     }
 
 
@@ -65,7 +67,7 @@ public class SecurityConfiguration
                 PUBLIC_URIS
             ).permitAll()
 
-            // TODO: consider protected routes
+            // TODO: consider access control rules for the different routes/entry points
             .antMatchers("/admin/**")
                 .hasRole("ADMIN")
 
@@ -75,6 +77,13 @@ public class SecurityConfiguration
                     .loginProcessingUrl("/login_check")
                     .defaultSuccessUrl("/app/")
                     .permitAll()
+            .and()
+
+            // exempt GRAPHQL_DEV_URI from CSRF requirements if allowDevGraphQLAccess is set
+            .csrf()
+                .requireCsrfProtectionMatcher(
+                    new AllowDevGraphQLAccess(allowDevGraphQLAccess)
+                )
             .and()
             .logout()
                 .logoutUrl("/logout")
@@ -88,18 +97,7 @@ public class SecurityConfiguration
                     .userDetailsService(userDetailsServiceBean());
 
     }
-
-
-    @Override
-    public void configure(WebSecurity web) throws Exception
-    {
-        if (ignoreGraphQLEndpoint)
-        {
-            web.ignoring().antMatchers(GRAPHQL_URI);
-        }
-    }
-
-
+    
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception
     {
