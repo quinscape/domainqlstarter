@@ -3,7 +3,7 @@ import {
     getFooRowCount,
     getFoos
 } from "../reducers";
-import byId from "../../util/byId";
+import findIndexbyId from "../../util/findIndexById";
 
 export const FOO_SET_LIST = "FOO_SET_LIST";
 export const FOO_UPDATE_DETAIL = "FOO_UPDATE_DETAIL";
@@ -133,7 +133,7 @@ export function storeFoo(foo)
 
             const foos = getFoos(state);
 
-            const index = byId(foos, foo.id);
+            const index = findIndexbyId(foos, foo.id);
             if (index >= 0 && foos[index].name !== foo.name)
             {
                 const newFoos = [ ... foos];
@@ -149,3 +149,4 @@ export function storeFoo(foo)
         defaultErrorHandler
     );
 }
+
