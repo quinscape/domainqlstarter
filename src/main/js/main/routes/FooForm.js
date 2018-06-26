@@ -18,6 +18,7 @@ import {
 import StaticText from "domainql-form/lib/StaticText";
 import Icon from "../../components/Icon";
 import config from "../../services/config";
+import hasRole from "../../util/hasRole";
 
 
 class FooForm extends React.Component {
@@ -50,6 +51,10 @@ class FooForm extends React.Component {
         }
         */
 
+        // for our badly secured frontend, we just change the color of the button and do
+        // not disable it like we should.
+        const canAccess = authentication.id === values.ownerId || hasRole("ROLE_ADMIN");
+
         return (
             <React.Fragment>
                 <GlobalErrors/>
@@ -72,9 +77,7 @@ class FooForm extends React.Component {
                         className={
                             cx(
                                 "btn",
-                                // for our badly secured frontend, we just change the color of the button and do
-                                // not disable it like we should.
-                                authentication.id === values.ownerId ? "btn-success" : "btn-danger"
+                                canAccess ? "btn-success" : "btn-danger"
                             )
                         }
                     >
