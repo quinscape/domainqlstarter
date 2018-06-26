@@ -66,7 +66,7 @@ public class SecurityConfiguration
                 .formLogin()
                     .loginPage("/login")
                     .loginProcessingUrl("/login_check")
-                    .defaultSuccessUrl("/app/exceed")
+                    .defaultSuccessUrl("/app/")
                     .permitAll()
             .and()
             .logout()
