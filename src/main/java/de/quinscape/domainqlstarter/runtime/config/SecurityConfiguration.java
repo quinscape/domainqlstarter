@@ -2,10 +2,10 @@ package de.quinscape.domainqlstarter.runtime.config;
 
 import org.jooq.DSLContext;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.security.access.expression.SecurityExpressionHandler;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,7 +14,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
 
@@ -30,12 +29,16 @@ public class SecurityConfiguration
 
     private final DSLContext dslContext;
 
+    private final boolean ignoreGraphQLEndpoint;
+
+    private static String GRAPHQL_URI = "/graphql";
+
     private final static String[] PUBLIC_URIS = new String[]
         {
             "/index.jsp",
             "/error",
             "/js/**",
-            "/graphql",
+            GRAPHQL_URI,
             "/css/**",
             "/webfonts/**",
             "/"
@@ -43,9 +46,13 @@ public class SecurityConfiguration
 
 
     @Autowired
-    public SecurityConfiguration(DSLContext dslContext)
+    public SecurityConfiguration(
+        DSLContext dslContext,
+        @Value("${domainql.allow-external-graphql:false}")
+        boolean ignoreGraphQLEndpoint)
     {
         this.dslContext = dslContext;
+        this.ignoreGraphQLEndpoint = ignoreGraphQLEndpoint;
     }
 
 
@@ -81,6 +88,17 @@ public class SecurityConfiguration
                     .userDetailsService(userDetailsServiceBean());
 
     }
+
+
+    @Override
+    public void configure(WebSecurity web) throws Exception
+    {
+        if (ignoreGraphQLEndpoint)
+        {
+            web.ignoring().antMatchers(GRAPHQL_URI);
+        }
+    }
+
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception
