@@ -31,18 +31,18 @@ public class DomainConfiguration
     public AtomikosDataSourceBean atomikosDataSourceBean(
 
         // all parameters from the @PropertySource defined in DomainqlstartApplication
-
-        @Value("${domainql.driver}")
+        // TODO: change property names parallel to changing the definitions in domainqlstarter-dev.properties
+        @Value("${domainqlstarter.driver}")
         String driverClassName,
-        @Value("${domainql.database}")
+        @Value("${domainqlstarter.database}")
         String databaseName,
-        @Value("${domainql.user}")
+        @Value("${domainqlstarter.user}")
         String user,
-        @Value("${domainql.password}")
+        @Value("${domainqlstarter.password}")
         String password,
-        @Value("${domainql.host}")
+        @Value("${domainqlstarter.host}")
         String serverName,
-        @Value("${domainql.port}")
+        @Value("${domainqlstarter.port}")
         String portNumber
     )
     {
