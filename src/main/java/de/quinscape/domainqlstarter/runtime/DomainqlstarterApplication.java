@@ -30,7 +30,7 @@ import org.springframework.context.annotation.PropertySource;
     WebConfiguration.class,
     SecurityConfiguration.class
 })
-@PropertySource({"classpath:domainqlstarter-${stage:dev}.properties"})
+@PropertySource({"classpath:domainqlstarter-${spring.profiles.active}.properties"})
 // TODO: rename starter class
 public class DomainqlstarterApplication
     extends SpringBootServletInitializer
