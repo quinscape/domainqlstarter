@@ -28,7 +28,7 @@ bootstrap(
         );
 
         // We need to tell webpack from where to load dynamically imported modules
-        // noinspection JSUndeclaredVariable
+        // noinspection JSUnresolvedVariable
         __webpack_public_path__ = config().contextPath + "/js/";
 
         return (
