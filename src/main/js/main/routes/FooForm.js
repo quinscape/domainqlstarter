@@ -27,29 +27,11 @@ class FooForm extends React.Component {
     {
         const { authentication } = config();
 
-        const { schema, control, foo, formConfig} = this.props;
+        const { formConfig } = this.props;
 
         const { formikProps } = formConfig;
 
-        const {isValid, isSubmitting, values, errors} = formikProps;
-
-        console.log({
-            isValid,
-            values,
-            errors
-        });
-
-        /*
-        input FooInput {
-          id: String!
-          name: String!
-          description: String
-          type: Int!
-          num: Int!
-          created: Timestamp!
-          owner: String!
-        }
-        */
+        const {isValid, values, errors} = formikProps;
 
         // for our badly secured frontend, we just change the color of the button and do
         // not disable it like we should.
@@ -97,5 +79,3 @@ export default withForm(
         type: "FooInput"
     }
 );
-
-
