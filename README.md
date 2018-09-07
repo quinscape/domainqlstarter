@@ -92,7 +92,7 @@ Run the JavaScript tests.
 
 ## IntelliJ
 
-Intellij being the preferred IDE, the project includes project files for IntelliJ.
+Intellij being the preferred IDE for our project team, the project includes project files for IntelliJ.
 
 ### Shared Run/Debug Configurations
 
