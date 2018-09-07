@@ -36,7 +36,17 @@ The starter project includes the following libraries / technologies:
 
  * [Maven](https://maven.apache.org/download.cgi) 3.5.0 (the spring boot projects come with an alternate mvnw/mvnw.cmd that might also work)
  * [NodeJs](https://nodejs.org/en/download/) v8.11.3+ 
- * [Yarn](https://yarnpkg.com/) v1.7.0+ 
+ * [Yarn](https://yarnpkg.com/) v1.7.0+
+
+## Example app
+ 
+The minimal example application is configured to work with a JOOQ schema generated
+from a Postgresql database. If you want a fully working example you need to create
+a Postgresql database with "domainqlstarter" as user and password (or reconfigure that in 
+[pom.xml])(https://github.com/quinscape/spring-jsview-starter/blob/master/pom.xml) and 
+[domainqlstarter-dev.properties](https://github.com/quinscape/spring-jsview-starter/blob/master/src/main/resources/domainqlstarter-dev.properties).
+ 
+Some example data including user definitions for spring security are included in the [Postgresql database backup](https://github.com/quinscape/spring-jsview-starter/blob/master/domainqlstarter.backup). 
  
 ## Usage
 
@@ -50,7 +60,6 @@ The starter project includes the following libraries / technologies:
 The maven build builds both Java and JavaScript in one step and executes tests for both. It
 produces a Spring Boot executable WAR. It can be just run from the command line, although the
 preferred development workflow is to use a local tomcat server from within the Intellij IDE. 
-
  
 ## Running the JavaScript Build 
 
