@@ -43,10 +43,10 @@ The starter project includes the following libraries / technologies:
 The minimal example application is configured to work with a JOOQ schema generated
 from a Postgresql database. If you want a fully working example you need to create
 a Postgresql database with "domainqlstarter" as user and password (or reconfigure that in 
-[pom.xml])(https://github.com/quinscape/spring-jsview-starter/blob/master/pom.xml) and 
-[domainqlstarter-dev.properties](https://github.com/quinscape/spring-jsview-starter/blob/master/src/main/resources/domainqlstarter-dev.properties).
+[pom.xml](https://github.com/quinscape/domainqlstarter/blob/master/pom.xml) and 
+[domainqlstarter-dev.properties](https://github.com/quinscape/domainqlstarter/blob/master/src/main/resources/domainqlstarter-dev.properties).
  
-Some example data including user definitions for spring security are included in the [Postgresql database backup](https://github.com/quinscape/spring-jsview-starter/blob/master/domainqlstarter.backup). 
+Some example data including user definitions for spring security are included in the [Postgresql database backup](https://github.com/quinscape/domainqlstarter/blob/master/domainqlstarter.backup). 
  
 ## Usage
 
