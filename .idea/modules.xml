@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../domainql-form/domainql-form.iml" filepath="$PROJECT_DIR$/../domainql-form/domainql-form.iml" />
       <module fileurl="file://$PROJECT_DIR$/domainqlstarter.iml" filepath="$PROJECT_DIR$/domainqlstarter.iml" />
     </modules>
   </component>
