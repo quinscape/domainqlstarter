@@ -1,21 +1,9 @@
 import React from "react"
 import cx from "classnames"
-import FormConfigProvider from "domainql-form/lib/FormConfigProvider";
 import Field from "domainql-form/lib/Field";
 import TextArea from "domainql-form/lib/TextArea";
 import withForm from "domainql-form/lib/withForm";
-import Form from "domainql-form/lib/Form";
-import FormBlock from "domainql-form/lib/FormBlock";
-import FieldMode from "domainql-form/lib/FieldMode";
 import GlobalErrors from "domainql-form/lib/GlobalErrors";
-
-import {
-    Button,
-    Container,
-    Row,
-    Col
-} from "reactstrap";
-import StaticText from "domainql-form/lib/StaticText";
 import Icon from "../../components/Icon";
 import config from "../../services/config";
 import hasRole from "../../util/hasRole";

@@ -180,11 +180,3 @@ export default connect(
         mapDispatchToProps
     )(FooAdmin)
 
-/**
- (
- <FooForm
- key={ fooDetail.id }
- value={ fooDetail }
- />
- )
- */
