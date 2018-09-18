@@ -1906,18 +1906,20 @@ domain-browser@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
 
-"domainql-form@ssh://git@bitbucket-vm:7999/xcd/domainql-form.git":
-  version "0.0.4"
-  resolved "ssh://git@bitbucket-vm:7999/xcd/domainql-form.git#fa48838f5f79a2ab5e6233c3ab69d5aac2a85bc6"
+domainql-form@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/domainql-form/-/domainql-form-0.0.8.tgz#8091e6815f1040eb3a6a5a3477ea04cbfe560f12"
   dependencies:
     classnames "^2.2.5"
+    lodash.debounce "^4.0.8"
     lodash.get "^4.4.2"
+    lodash.isequal "^4.5.0"
     lodash.topath "^4.5.2"
     prop-types "^15.6.1"
 
-"domainql-webpack-plugin@ssh://git@bitbucket-vm:7999/xcd/domainql-webpack-plugin.git":
+domainql-webpack-plugin@^0.0.3:
   version "0.0.3"
-  resolved "ssh://git@bitbucket-vm:7999/xcd/domainql-webpack-plugin.git#ac52d6751b2f17ef66ecd33bb96c21d5b0c8d980"
+  resolved "https://registry.yarnpkg.com/domainql-webpack-plugin/-/domainql-webpack-plugin-0.0.3.tgz#301778845140f2b14ad4b5c5a97c8884e0d1441e"
 
 domready@^1.0.8:
   version "1.0.8"
@@ -2837,15 +2839,15 @@ json5@^0.5.0, json5@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/json5/-/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
 
-"jsview-bootstrap@ssh://git@bitbucket-vm:7999/xcd/jsview-bootstrap":
-  version "0.0.1"
-  resolved "ssh://git@bitbucket-vm:7999/xcd/jsview-bootstrap#ca6b4953fb329f557a7989f5470bbd24fd782721"
+jsview-bootstrap@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/jsview-bootstrap/-/jsview-bootstrap-0.1.0.tgz#f23b26c64946e056585d927e261d83963fa9eb78"
   dependencies:
     domready "^1.0.8"
 
-"jsview-webpack-plugin@ssh://git@bitbucket-vm:7999/xcd/jsview-webpack-plugin.git":
-  version "0.0.2"
-  resolved "ssh://git@bitbucket-vm:7999/xcd/jsview-webpack-plugin.git#95f3d47186eb55e666ced7b4b8b753655c6a11de"
+jsview-webpack-plugin@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/jsview-webpack-plugin/-/jsview-webpack-plugin-0.1.0.tgz#61400b9b2ff22ade684c52dbc1054177e9eb8ac4"
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
@@ -2908,6 +2910,10 @@ lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
 
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+
 lodash.findkey@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.findkey/-/lodash.findkey-4.6.0.tgz#83058e903b51cbb759d09ccf546dea3ea39c4718"
@@ -2916,7 +2922,7 @@ lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
 
-lodash.isequal@4.5.0:
+lodash.isequal@4.5.0, lodash.isequal@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
 
