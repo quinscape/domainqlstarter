@@ -16,9 +16,12 @@ bootstrap(
 
         __initConfig(initial);
 
+
         const store = storeFactory(
             rootReducer,
-            initial,
+            {
+                users: initial.preloadedUsers.listUsers
+            },
             history
         );
 
@@ -36,21 +39,23 @@ bootstrap(
     () => console.info("ready!")
 );
 
-export const PRELOADED_QUERIES = {
-    // language=GraphQL
-    preloadedUsers: `{
-        listUsers {
-            id
-            login
-            disabled
-            created
-            lastLogin
-            roles
-            foos{
-                id
-                name
+    export const PRELOADED_QUERIES = {
+        // language=GraphQL
+        preloadedUsers: `
+            query defaultUsers
+            {
+                listUsers(offset: 0, limit: 20){
+                    id
+                    login
+                    disabled
+                    created
+                    lastLogin
+                    roles
+                    foos{
+                        id
+                        name
+                    }
+                }
             }
-        }
-    }
-    `
-};
+        `
+    };

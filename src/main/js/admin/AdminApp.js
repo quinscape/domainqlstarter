@@ -23,6 +23,7 @@ import {
 import About from "./routes/About";
 import AdminHome from "./routes/AdminHome";
 import LogoutForm from "../components/LogoutForm";
+import AdminDetail from "./routes/AdminDetail";
 
 class App extends React.Component {
 
@@ -59,6 +60,7 @@ class App extends React.Component {
                             </Collapse>
                         </Navbar>
                         <Switch>
+                            <Route exact path="/admin/user/:id" component={ AdminDetail }/>
                             <Route exact path="/admin/" component={ AdminHome }/>
                             <Route path="/admin/about" component={ About }/>
                         </Switch>
